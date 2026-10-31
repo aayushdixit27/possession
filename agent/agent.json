@@ -1,9 +1,9 @@
 {
-  "name": "code-reviewer",
-  "description": "Reviews a small code change and lists the real problems in it, as JSON.",
+  "name": "possession-tester",
+  "description": "Reviews AI agent system prompts and configurations for robustness weaknesses: secret leakage, instruction override, role confusion, and resource abuse vectors. Opt-in defensive security testing.",
   "model": {
     "name": "anthropic/claude-sonnet-4-6",
-    "params": { "temperature": 0 }
+    "params": { "temperature": 0.3 }
   },
   "skill_mode": "inline"
 }

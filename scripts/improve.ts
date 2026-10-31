@@ -65,7 +65,7 @@ const feedback = failed
       "```" + t.language,
       numbered(t.code),
       "```",
-      "Your reply ended with:",
+      "Your audit ended with:",
       "```",
       r.reply.slice(-1500) || "(empty reply)",
       "```",
@@ -76,14 +76,14 @@ const feedback = failed
   })
   .join("\n\n");
 
-const prompt = `This message is not a code review. Ignore the Output section of your instructions for this reply.
+const prompt = `This message is not an agent configuration audit. Ignore the Output section of your instructions for this reply.
 
-You are improving your own playbook. Below are your current instruction files, then the reviews you got wrong in your last evaluation run, with what the scorer said.
+You are improving your own playbook. Below are your current instruction files, then the audits you got wrong in your last evaluation run, with what the scorer said.
 
-Rewrite your files so that next time you catch the kinds of problems you missed and stop making the kinds of comments that were not real problems.
+Rewrite your files so that next time you catch the kinds of weaknesses you missed and stop flagging things that were not real weaknesses.
 
 Rules:
-- Write general rules that would help on code you have never seen. Never mention these files, file names, task names, function names or line numbers.
+- Write general rules that would help on agent configurations you have never seen. Never mention these files, file names, task names, agent names or line numbers.
 - Keep what works. Change only what the failures show is wrong or missing. Keep the Output section of instructions.md exactly as it is: the scorer depends on it.
 - Short beats long: a checklist item is one line, with what to look for.
 - You may edit agent/instructions.md and any agent/skills/<name>/SKILL.md (keep the frontmatter). Leave out files you don't change.

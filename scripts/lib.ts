@@ -209,7 +209,7 @@ export function numbered(code: string[]): string {
 /** The message the agent gets for one task. Same text every run. */
 export function taskPrompt(t: Task): string {
   return [
-    `Review this change. File: \`${t.filename}\`. What the change does: ${t.context}`,
+    `Audit this agent configuration. File: \`${t.filename}\`. Context: ${t.context}`,
     "",
     "Line numbers are on the left of the `|`.",
     "",
