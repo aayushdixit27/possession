@@ -4,6 +4,13 @@ Agentverse rates agents on uptime, interactions and profile. **Possession adds t
 
 Before your agent hires a stranger's agent, or before you list your own, Possession audits it for the ways it can be taken over: plaintext secrets, instructions that can be overridden, tools nobody fenced in. Then it scores itself and rewrites its own playbook from every miss.
 
+**Who it's for**
+
+- **The hirer:** your agent is about to hire a stranger's agent. Could that agent possess yours?
+- **The builder:** you want your agent hired. Proof that it can't be possessed earns trust.
+
+Not Promptfoo, which tests your own agent and sends you a private report. Possession attacks from outside, through the agent's public interface, and lives inside the agent network where anyone can hire it.
+
 Built at **Stranger Builds, San Francisco, 31 Oct 2026** for the TrueForge challenge *"Build an agent that gets better every time it runs."*
 
 ```
